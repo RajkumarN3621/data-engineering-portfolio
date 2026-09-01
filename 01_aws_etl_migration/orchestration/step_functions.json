@@ -1,0 +1,32 @@
+{
+  "Comment": "Sanitized example: Step Functions orchestrates SageMaker Processing.",
+  "StartAt": "RunETL",
+  "States": {
+    "RunETL": {
+      "Type": "Task",
+      "Resource": "arn:aws:states:::sagemaker:createProcessingJob.sync",
+      "Parameters": {
+        "ProcessingJobName.$": "$.processing_job_name",
+        "RoleArn": "arn:aws:iam::ACCOUNT_ID:role/EXAMPLE_SAGEMAKER_EXECUTION_ROLE",
+        "ProcessingResources": {
+          "ClusterConfig": {
+            "InstanceCount": 1,
+            "InstanceType": "ml.m5.xlarge",
+            "VolumeSizeInGB": 50
+          }
+        },
+        "NetworkConfig": {
+          "VpcConfig": {
+            "Subnets": [
+              "SUBNET_ID"
+            ],
+            "SecurityGroupIds": [
+              "SECURITY_GROUP_ID"
+            ]
+          }
+        }
+      },
+      "End": true
+    }
+  }
+}
