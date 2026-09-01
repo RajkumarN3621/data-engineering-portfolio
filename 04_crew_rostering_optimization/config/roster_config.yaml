@@ -1,0 +1,6 @@
+max_daily_block_hours: 8
+max_daily_sectors: 4
+required_roles:
+  - Captain
+  - First Officer
+  - Cabin Crew
