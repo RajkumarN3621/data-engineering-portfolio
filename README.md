@@ -21,9 +21,21 @@ Key patterns:
 - Centralized logging and monitoring
 - Chunked data loading and performance optimization
 
-### 02. Linux ETL
+### 02. Linux ETL Engineering
 
-Python and SQL based ETL patterns for integrating data from multiple relational source systems.
+Multi-source ETL patterns using Python, SQL, Linux execution,
+Airflow-style orchestration, and Alteryx-style workflow scheduling.
+
+Key patterns:
+
+- Teradata, Oracle, and SQL Server integration
+- Python and SQL ETL
+- Parameter-driven execution
+- Airflow scheduling
+- Alteryx workflow automation
+- Monitoring and reconciliation
+- Incremental processing
+- ETL performance optimization
 
 ### 03. Data Quality
 

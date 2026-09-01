@@ -1,0 +1,7 @@
+{
+  "environment": "dev",
+  "source_system": "synthetic_source",
+  "target_schema": "analytics_dev",
+  "target_table": "orders",
+  "batch_size": 1000
+}
